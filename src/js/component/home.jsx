@@ -38,7 +38,7 @@ const Home = () => {
           <li key={index}>
             {todo}{" "}
             <i
-              className="far fa-trash-alt"
+              className="far fa-trash-alt icon"
               onClick={() => handleDeleteTask(index)}
               style={{ cursor: "pointer" }}
             ></i>
