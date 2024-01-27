@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Home = () => {
   const [inputValue, setInputValue] = useState("");
   const [todos, setTodos] = useState([]);
@@ -45,7 +46,7 @@ const Home = () => {
           </li>
         ))}
       </ul>
-      <div>{todos.length} tareas</div>
+      {todos.length === 1 ? `1 Tarea` : `${todos.length} Tareas`}
     </div>
   );
 };
